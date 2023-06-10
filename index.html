@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Bulb</h1>
+    <div style="margin-top: 5px;">
+        <div id="image"></div>
+        <button onclick="myimage()" id="disp" style="margin-top: 10px;"></button>
+    </div>
+    <script>
+        let myimage1 = `<img src="./bulb-on.png" alt="" style="width: 300px !important;height: 500px !important;">`
+        let myimage2 = `<img src="./bulb-off.png" alt="" style="width: 300px !important;height: 500px !important;">`
+        disp.innerHTML = "on"
+        image.innerHTML = `<img src="./bulb-off.png" alt="" style="width: 300px !important;height: 500px !important;">`
+        const myimage = () => {
+            if (disp.innerHTML == "on") {
+               image.innerHTML = myimage1
+            //    disp.innerHTML = `box-shadow: 0px 1px 5px 5px rgb(139, 167, 84);`
+               disp.style.backgroundColor = "yellowgreen"
+                disp.innerHTML = "off"
+            }
+            else if(disp.innerHTML == "off"){
+               image.innerHTML = myimage2
+               disp.style.backgroundColor = "white"
+                disp.innerHTML = "on"
+            }
+            
+        }
+    </script>
+</body>
+
+</html>

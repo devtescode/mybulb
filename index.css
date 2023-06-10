@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* div{
+    margin-left: 80vh;
+    margin-top: 50px;
+} */
+#disp{
+    padding: 15px;
+    /* background-color: aquamarine; */
+    border-radius: 30px;
+    /* background-color: aliceblue; */
+}
+body{
+    /* background-image: linear-gradient(to right, rgb(42, 42, 46),rgb(53, 53, 219)); */
+    text-align: center !important;
+}
+
+@media (max-width:688px) {
+    
+}
